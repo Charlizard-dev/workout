@@ -1,0 +1,90 @@
+name: charlizard
+description: "Charlizard — premium fitness tracker with Spotify integration, XP progression, achievements and social story sharing."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.1.0
+
+  # Navigation
+  go_router: ^18.0.1
+
+  # Networking (Spotify Web API)
+  dio: ^5.11.1
+  webview_flutter: ^4.14.1
+
+  # Functional error handling
+  dartz: ^0.10.1
+
+  # Local storage
+  drift: ^2.35.0
+  drift_flutter: ^0.3.1
+  path_provider: ^2.1.4
+  path: ^1.9.1
+  shared_preferences: ^2.5.5
+  flutter_secure_storage: ^11.1.1
+
+  # Crypto / OAuth PKCE
+  crypto: ^3.0.7
+
+  # Image caching (Spotify artwork)
+  cached_network_image: ^4.0.0
+
+  # Sharing
+  share_plus: ^13.3.0
+  image_gallery_saver: ^2.0.3
+
+  # Notifications / haptics
+  flutter_local_notifications: ^22.3.1
+  vibration: ^3.2.1
+
+  # Intl formatting
+  intl: ^0.20.3
+
+  # QR generation for story cards
+  qr_flutter: ^4.1.0
+
+  # Package info
+  package_info_plus: ^10.2.1
+
+  # UUIDs
+  uuid: ^4.6.0
+
+  # URL launching (settings, Spotify app handoff)
+  url_launcher: ^6.3.2
+  provider: ^6.1.5+1
+  nested: ^1.0.0
+  app_links: ^7.2.1
+  flutter_svg: ^2.3.0
+  image_picker: ^1.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  build_runner: ^2.4.13
+  freezed: ^4.0.1
+  json_serializable: ^6.8.0
+
+  # Drift tooling
+  drift_dev: ^2.20.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/db/
